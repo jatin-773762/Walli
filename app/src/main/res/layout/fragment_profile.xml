@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/SplashScreen"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white"
+    tools:context=".User.Profile_">
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:foreground="@drawable/gradient"
+        android:id="@+id/profile_wallpaper"
+        android:background="@color/colorPrimaryDark"
+        android:scaleType="centerCrop"/>
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/setprofile_wallpaper"
+        android:src="@drawable/ic_edit_black_24dp"
+        android:background="@android:color/transparent"
+        android:padding="2dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="end"
+        android:layout_marginEnd="10dp"
+        android:alpha="0.8"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="100dp">
+    <ImageView
+        android:layout_width="78dp"
+        android:layout_height="78dp"
+        android:id="@+id/profile_picture"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"
+        android:elevation="10dp"
+        android:background="@android:color/transparent" />
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:id="@+id/profile_card"
+        android:layout_marginBottom="10dp"
+        app:cardCornerRadius="10dp"
+        android:paddingVertical="10dp"
+        android:layout_marginHorizontal="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="50dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/profile_name"
+                android:textStyle="bold"
+                android:textSize="22dp"
+                android:layout_gravity="center_horizontal"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                    android:id="@+id/profile_email"
+                android:textSize="12dp"
+                android:layout_gravity="center_horizontal"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile_card"
+            android:background="@color/colorPrimaryDark"
+            android:padding="10dp"
+            android:text="Liked Photos"
+            android:layout_centerInParent="true"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14dp"
+            android:elevation="10dp"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/ic_favorite_black_24dp"
+            android:drawableTint="@android:color/white"
+            android:id="@+id/user_stats"/>
+
+    </RelativeLayout>
+
+
+<!--    <FrameLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:background="@color/colorPrimary"-->
+
+<!--        android:layout_marginTop="290dp">-->
+
+<!--    </FrameLayout>-->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log Out"
+        android:layout_gravity="end|bottom"
+        android:id="@+id/signout"/>
+
+</FrameLayout>
