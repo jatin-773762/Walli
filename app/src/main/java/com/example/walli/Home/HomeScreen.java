@@ -199,7 +199,6 @@ public class HomeScreen extends AppCompatActivity {
         new AsnycTaskRunner("/photos?client_id=" + ACCESS_KEY + "&page=" + page+"&per_page=12").execute();
     }
 
-
     private class AsnycTaskRunner extends AsyncTask<String,String,String> {
 
         String query;
